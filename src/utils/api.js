@@ -1,5 +1,5 @@
 const API_BASE_URL =
-  process.env.REACT_APP_API_BASE_URL || "http://localhost:5000";
+  process.env.REACT_APP_API_BASE_URL || "http://localhost:10000";
 // process.env.REACT_APP_API_BASE_URL || "https://project-we-love-movies-backend-dakotawatkins.vercel.app/";
 
 // https://we-love-movies-database-dw.herokuapp.com/
@@ -9,6 +9,7 @@ const API_BASE_URL =
  */
 const headers = new Headers();
 headers.append("Content-Type", "application/json");
+headers.append("x-api-key", "c8d397f4-6560-4b07-9d05-69057adeff58"); // Added your API key here
 
 /**
  * Fetch `json` from the specified URL and handle error status codes and ignore `AbortError`s
