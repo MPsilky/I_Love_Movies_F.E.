@@ -43,7 +43,7 @@
     "node": "14.x"
   },
   "proxy": "https://we-love-movies-back-end-qijg.onrender.com",
-  "homepage": ".", 
+  "homepage": "https://we-love-movies-back-end-qijg.onrender.com", 
   "env": {
     "REACT_APP_API_BASE_URL": "https://we-love-movies-back-end-qijg.onrender.com"
   }
