@@ -40,10 +40,10 @@
     ]
   },
   "engines": {
-    "node": "14.x" // Make sure this matches the node version on Render
+    "node": "14.x"
   },
-  "proxy": "https://we-love-movies-back-end-qijg.onrender.com", // This is only used in development, not in production
-  "homepage": ".", // This can be necessary to set the root for your static files correctly
+  "proxy": "https://we-love-movies-back-end-qijg.onrender.com",
+  "homepage": ".", 
   "env": {
     "REACT_APP_API_BASE_URL": "https://we-love-movies-back-end-qijg.onrender.com"
   }
