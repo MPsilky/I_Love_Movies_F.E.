@@ -6,6 +6,7 @@
     "@testing-library/jest-dom": "^5.11.5",
     "@testing-library/react": "^11.1.1",
     "@testing-library/user-event": "^12.2.0",
+    "express": "^4.17.1", 
     "markdown": "^0.5.0",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
@@ -15,35 +16,21 @@
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "node server.js", 
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
-    "extends": [
-      "react-app",
-      "react-app/jest"
-    ]
+    "extends": ["react-app", "react-app/jest"]
   },
   "browserslist": {
-    "production": [
-      ">0.2%",
-      "not dead",
-      "not op_mini all"
-    ],
-    "development": [
-      "last 1 chrome version",
-      "last 1 firefox version",
-      "last 1 safari version"
-    ]
+    "production": [">0.2%", "not dead", "not op_mini all"],
+    "development": ["last 1 chrome version", "last 1 firefox version", "last 1 safari version"]
   },
   "engines": {
     "node": "14.x"
   },
   "proxy": "https://we-love-movies-back-end-qijg.onrender.com",
-  "homepage": "https://we-love-movies-back-end-qijg.onrender.com", 
-  "env": {
-    "REACT_APP_API_BASE_URL": "https://we-love-movies-back-end-qijg.onrender.com"
-  }
+  "homepage": "." 
 }
