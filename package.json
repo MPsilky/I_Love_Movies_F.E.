@@ -12,10 +12,11 @@
     "react-router": "^5.2.0",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.0",
+    "serve": "^11.3.2",
     "web-vitals": "^0.2.4"
   },
   "scripts": {
-    "start": "react-scripts start",
+    "start": "serve -s build",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -37,5 +38,13 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "engines": {
+    "node": "14.x" // Make sure this matches the node version on Render
+  },
+  "proxy": "https://we-love-movies-back-end-qijg.onrender.com", // This is only used in development, not in production
+  "homepage": ".", // This can be necessary to set the root for your static files correctly
+  "env": {
+    "REACT_APP_API_BASE_URL": "https://we-love-movies-back-end-qijg.onrender.com"
   }
 }
